@@ -1,0 +1,12 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.env
+.streamlit/secrets.toml
+.DS_Store
+.idea/
+.vscode/
+data/uploads/
+data/demo_events.csv
+*.log
