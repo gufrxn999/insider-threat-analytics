@@ -36,7 +36,14 @@ PYTHONPATH=src python -m insider_threat.demo_data
 
 ## Event CSV schema
 
-All columns below are required. Timestamps should include a timezone when possible; they are normalized to UTC. `event_type` values are free-form, with these values used by the current rules: `external_email`, `usb_copy`, and `privilege_change`.
+All columns below are required. Timestamps should include a timezone when possible; they are normalized to UTC. `event_type` values are free-form, with these values used by the current rules: 
+
+## Automated checks
+
+Run the focused analytics regression checks with:
+
+PYTHONPATH=src python -m unittest discover -s tests
+`external_email`, `usb_copy`, and `privilege_change`.
 
 | Column | Meaning | Example |
 |---|---|---|
